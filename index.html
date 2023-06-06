@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Video Player</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <label for="video-file" class="file-label">Select Video File</label>
+      <input type="file" id="video-file" accept="video/*" />
+      <div id="loading-overlay">
+        <div class="spinner"></div>
+        <div id="loading-message">Cargando video...</div>
+      </div>
+      <div class="video-wrapper">
+        <video id="video-player" controls></video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
